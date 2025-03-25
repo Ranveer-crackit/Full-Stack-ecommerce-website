@@ -1,0 +1,93 @@
+/* 🎨 Full-screen background with a modern gradient */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+/* 🌟 Card-style sign-in form */
+.signin-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/* 📝 Form Styles */
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* ✨ Sign-In Button */
+.signin-btn {
+  width: 100%;
+  background: #8e2de2;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.signin-btn:hover {
+  background: #6a11cb;
+}
+
+/* 🔗 Sign-Up Link */
+.signup-link {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.signup-link a {
+  color: #8e2de2;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* 🎬 Slide-in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 480px) {
+  .signin-card {
+    width: 90%;
+    padding: 2rem;
+  }
+}
